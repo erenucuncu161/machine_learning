@@ -45,3 +45,6 @@ print(lin_reg2.predict(poly_reg2.fit_transform([[6.6]])))
 print(lin_reg2.predict(poly_reg2.fit_transform([[11]])))
 
 
+from sklearn.metrics import r2_score
+print("polinomal regresyon R2 degeri")
+print(r2_score(Y,lin_reg.predict(poly_reg.fit_transform(X))))
